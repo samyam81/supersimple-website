@@ -1,78 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body style="
-    height: 3000px;
-    padding-top: 60px;
-    padding-left: 80px;
-  ">
-    <div style="
-      background-color: black;
-      color: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 50px;
-      z-index: 100;
-    ">header</div>
 
-    <div style="
-      background-color: green;
-      color: white;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      top: 50px;
-      width: 72px;
-    ">
+  <body class="min-h-screen">
+    <div
+      class="bg-black text-white fixed top-0 left-0 right-0 h-16 z-50 flex items-center justify-center"
+    >
+      header
+    </div>
+
+    <div
+      class="bg-green text-white fixed left-0 bottom-0 top-16 w-72 flex flex-col items-center"
+    >
       sidebar
-      <div style="
-        position: absolute;
-        background-color: red;
-        color: white;
-        top: 0;
-        right: 0;
-      ">
-        X
-      </div>
+      <div class="absolute bg-red text-white top-0 right-0 p-2"> X </div>
     </div>
 
-    <div style="
-      position: absolute;
-      background-color: red;
-      color: white;
-      top: 60px;
-      right: 10px;
-    ">
-      absolute
-    </div>
+    <div class="absolute bg-red text-white top-16 right-10 p-2"> absolute </div>
 
-    <div style="
-      background-color: lightblue;
-      height: 200px;
-      width: 200px;
-      position: static;
-    ">div 1</div>
-    <div style="
-      background-color: lightpink;
-      height: 200px;
-      width: 200px;
-      position: relative;
-    ">
+    <div class="bg-lightblue h-200 w-200"> div 1 </div>
+
+    <div class="bg-lightpink h-200 w-200 relative">
       div 2
-      <div style="
-        position: absolute;
-        background-color: black;
-        color: white;
-        bottom: 10px;
-        right: 10px;
-      ">
+      <div class="absolute bg-black text-white bottom-4 right-4 p-2">
         5:00
       </div>
     </div>
-
   </body>
 </html>

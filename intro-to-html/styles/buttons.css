@@ -35,8 +35,7 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  transition: background-color 0.15s,
-    color 0.15s;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .join-button:hover {

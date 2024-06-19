@@ -1,60 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body style="padding-bottom: 1000px;">
-    <div style="
-      display: grid;
-      grid-template-columns: 100px 100px;
-    ">
-      <div style="background-color: lightblue;">div 1</div>
-      <div style="background-color: lightpink;">div 2<p>text</p></div>
+
+  <body class="p-8">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="bg-lightblue p-4">div 1</div>
+      <div class="bg-lightpink p-4">div 2<p>text</p> </div>
     </div>
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 100px 200px;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">100px<p>text</p></div>
-      <div style="background-color: lightblue;">200px</div>
-      <div style="background-color: lightpink;">100px</div>
+    <div class="mt-8 grid grid-cols-3 gap-4">
+      <div class="bg-lightblue p-4">100px</div>
+      <div class="bg-lightpink p-4">100px<p>text</p> </div>
+      <div class="bg-lightblue p-4">200px</div>
+      <div class="bg-lightpink p-4">100px</div>
     </div>
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 1fr;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">1fr</div>
+    <div class="mt-8 grid grid-cols-2 gap-4">
+      <div class="bg-lightblue p-4">100px</div>
+      <div class="bg-lightpink p-4">1fr</div>
     </div>
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 1fr 2fr;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">1fr</div>
-      <div style="background-color: lightblue;">2fr</div>
+    <div class="mt-8 grid grid-cols-3 gap-4">
+      <div class="bg-lightblue p-4">100px</div>
+      <div class="bg-lightpink p-4">1fr</div>
+      <div class="bg-lightblue p-4">2fr</div>
     </div>
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 20px;
-      row-gap: 40px;
-    ">
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
+    <div class="mt-8 grid grid-cols-3 gap-x-4 gap-y-8">
+      <div class="bg-lightblue p-4 h-48">1fr</div>
+      <div class="bg-lightpink p-4 h-48">1fr</div>
+      <div class="bg-lightblue p-4 h-48">1fr</div>
+      <div class="bg-lightpink p-4 h-48">1fr</div>
+      <div class="bg-lightblue p-4 h-48">1fr</div>
+      <div class="bg-lightpink p-4 h-48">1fr</div>
     </div>
   </body>
 </html>
